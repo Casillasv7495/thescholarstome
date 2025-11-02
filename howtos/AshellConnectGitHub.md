@@ -40,19 +40,19 @@ folder you were in the entire time. So, below are the steps for future me, so I 
 2. install git
 
 ```bash
->pkg install git
+    >pkg install git
 ```
 
 3. Check with ls that there is a bin folder
 
 ```bash
->ls
+    >ls
 ```
 
 4. Also, check what commands you can do with lg2
 
 ```bash
-> lg2
+    > lg2
 ```
 
 5. Clone the git repo from GitHub. You will need the URL of the repo you are cloning. There is no big green button on
@@ -60,19 +60,19 @@ folder you were in the entire time. So, below are the steps for future me, so I 
    You will have to add ".git" at the end.
 
 ```bash 
-> git clone "GitHub Repo URL with .git at the end"
+    > git clone "GitHub Repo URL with .git at the end"
 ```
 
 6. Check with ls that your repo is there
 
 ```bash
-> ls
+    > ls
 ```
 
 7. Now generate the public/private key
 
 ```bash
-> ssh-keygen -t rsa -b 4096 -C "your email you use on GitHub"
+    > ssh-keygen -t rsa -b 4096 -C "your email you use on GitHub"
 ```
 
 8. Click enter for default file name and file folder, unless one already exists, click Y first, then for the passwords,
@@ -85,19 +85,19 @@ folder you were in the entire time. So, below are the steps for future me, so I 
    folder
 
 ```bash
-> cd .ssh/
+    > cd .ssh/
 ```
 
 10. Check that the keys are in there with ls
 
 ```bash
-> ls
+    > ls
 ```
 
 11. display the public key and manually copy it
 
 ```bash
-> head id_ed25519.pub
+    > head id_ed25519.pub
 ```
 
 12. Go to GitHub on a browser (I used Firefox on my iPad and phone), navigate to the settings, then to SSH and GPG keys,
@@ -111,68 +111,68 @@ folder you were in the entire time. So, below are the steps for future me, so I 
 14. Okay, finally! Let's test it! Navigate to the git repo folder and make sure you are inside it.
 
 ```bash
-> cd "repo folder"
+    > cd "repo folder"
 ```
 
 15. Make a test file, we will push it to the repo
 
 ```bash
-> vim testfile.txt
+    > vim testfile.txt
 ```
 
 16. Pull the git repo
 
 ```bash
-> git pull
+    > git pull
 ```
 
 17. Add the file to be uploaded to git
 
 ```bash
-> git add .
+    > git add .
 ```
 
 18. Look at the status; it should say changes to commit or something similar
 
 ```bash
-> git status
+    > git status
 ```
 
 19. make a commit message (whisper: you will not be able to do this, it will say you will have an extra step, the first
     time you do this, thank goodness for testing)
 
 ```bash
-> git commit -m "Your message here"
+    > git commit -m "Your message here"
 ```
 
 20. Oh, look, an error, I would never have guessed. Add your user.name and user.email from GitHub.
 
 ```bash
-> lg2 config user.name 'Your Name'
+    > lg2 config user.name 'Your Name'
 ```
 
 21. Add your user.email from GitHub now
 
 ```bash
-> lg2 config user.email youremail@example.com
+    > lg2 config user.email youremail@example.com
 ```
 
 22. Redo the commit message
 
 ```bash
-> git commit -m "Your message here"
+    > git commit -m "Your message here"
 ```
 
 23. Check the status, I only get back what branch it's on.
 
 ```bash
-> git status
+    > git status
 ```
 
 24. Now push to the repo
 
 ```bash
-> git push
+    > git push
 ```
 
 25. It will ask for the password; this is going to be the GPG key, not your GitHub password. I just copied and pasted it
