@@ -1,0 +1,75 @@
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfcf9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f1f0ea;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0.3rem 0;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f0ea;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.resource-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-list li {
+  margin-bottom: 0.6rem;
+}
+
+.resource-list a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}

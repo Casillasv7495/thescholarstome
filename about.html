@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About | The Scholars Tome</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | The Scholar's Tome</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>The Scholars Tome</h1>
+    <h1>The Scholar’s Tome</h1>
     <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="howtos.html">How-Tos</a> |
-      <a href="data.html">Data</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="howtos.html">How-Tos</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
-    <h2>About</h2>
-    <p><strong>The Scholars Tome</strong> is an open digital commons for educational resources, datasets, and how-tos curated for researchers and students. It’s designed to be lightweight, permanent, and accessible to anyone.</p>
+    <section>
+      <h2>About This Project</h2>
+      <p>
+        The Scholar’s Tome is an open-access digital archive for resources that inform, inspire, and educate.
+        It began as a personal collection of research tools and evolved into a public commons for data and learning.
+      </p>
+      <p>
+        This site is built as a static archive—lightweight, enduring, and adaptable for generations of scholars and educators.
+      </p>
+    </section>
   </main>
+
   <footer>
-    © <span id="year"></span> The Scholars Tome
+    <p>© <span id="year"></span> The Scholar’s Tome</p>
   </footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

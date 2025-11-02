@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data | The Scholar's Tome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>The Scholar’s Tome</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html" class="active">Data</a></li>
+        <li><a href="howtos.html">How-Tos</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Open Data Collections</h2>
+      <p>Explore curated data sources, maps, and repositories for open research and education.</p>
+      <ul class="resource-list">
+        <li><a href="#">🌍 GIS Open Data Hub</a> — global shapefiles, raster data, and map layers</li>
+        <li><a href="#">📊 Public Data Portal</a> — demographic, economic, and social datasets</li>
+        <li><a href="#">📚 Academic Commons</a> — open-access journals and archives</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> The Scholar’s Tome</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

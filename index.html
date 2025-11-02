@@ -1,10 +1,43 @@
-<header>
-  <h1>The Scholars Tome</h1>
-  <p>An open hub for datasets, tutorials, and research resources.</p>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="howtos.html">How-Tos</a> |
-    <a href="data.html">Data</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Scholar's Tome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>The Scholar’s Tome</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="howtos.html">How-Tos</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        This is a living collection of open resources, data sets, and guides curated for researchers, educators, and curious minds.
+        The goal of <strong>The Scholar’s Tome</strong> is to preserve and share knowledge that stands the test of time.
+      </p>
+      <p>
+        Explore data repositories, tutorials, and tools that empower open learning and collaboration.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> The Scholar’s Tome — A Commons for Open Knowledge</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
