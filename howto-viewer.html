@@ -14,7 +14,7 @@ const params = new URLSearchParams(window.location.search);
 const file = params.get('file');
 
 if (file) {
-  fetch(`howtos/${file}`)
+  fetch(`/TheScholarsTome/howtos/${file}`)
     .then(res => {
       if (!res.ok) throw new Error("File not found");
       return res.text();
