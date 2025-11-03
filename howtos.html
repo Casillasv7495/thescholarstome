@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How-Tos | The Scholar's Tome</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>How-Tos | The Scholar's Tome</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
+<header>
     <h1>The Scholar’s Tome</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="data.html">Data</a></li>
-        <li><a href="howtos.html" class="active">How-Tos</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="howtos.html" class="active">How-Tos</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
-  <main>
+<main>
     <section>
-      <h2>Guides & Tutorials</h2>
-      <p>Practical walkthroughs for mapping, coding, and data management.</p>
-      <ul class="resource-list">
-        <li><a href="#">How to Normalize Data in GIS</a></li>
-        <li><a href="howto-viewer.html?file=AshellConnectGitHub.md" target="_blank">Ashell connect GitHub</a></li>
-        <li><a href="#">Using QGIS for Spatial Analysis</a></li>
-      </ul>
+        <h2>Guides & Tutorials</h2>
+        <p>Practical walkthroughs for mapping, coding, and data management.</p>
+        <ul class="resource-list">
+            <li><a href="#">How to Normalize Data in GIS</a></li>
+            <li><a href="howto-viewer.html?file=AshellConnectGitHub.md">Ashell connect GitHub</a></li>
+            <li>
+                <a href="howto-viewer.html?file=HowtoforDotDensMap.md">How to for Dot Density Map</a></li>
+        </ul>
     </section>
-  </main>
+</main>
 
-  <footer>
+<footer>
     <p>© <span id="year"></span> The Scholar’s Tome</p>
-  </footer>
-  <script>
+</footer>
+<script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</script>
 </body>
 </html>
